@@ -4,4 +4,9 @@ $(document).ready(function() {
 
     $("tr:odd").addClass("odd");
     $("tr:even").addClass("even");
-})
+
+    $('th').click(function(){
+        $('th').siblings().removeClass('selected');
+        $(this).siblings().addClass('selected');
+    });
+});
